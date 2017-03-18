@@ -11,6 +11,7 @@ $('#app').html(`
 	<br>
 	<br>
 	<br>
+	
 	<div class="preloader-wrapper big active">
     <div class="spinner-layer spinner-blue-only">
       <div class="circle-clipper left">
@@ -22,6 +23,7 @@ $('#app').html(`
       </div>
     </div>
   </div>
+ 
   `);
 
 setTimeout(function(){
@@ -56,7 +58,7 @@ $.ajax({
 	let mp3_5 = album.tracks.items[4].preview_url;
 	let mp3_6 = album.tracks.items[5].preview_url;
 	let html = `
-		<h1>${name}</h1>
+		<h1><center>${name}</h1>
 		<img src ="${image1}"/>
 		<audio controls>
 		<source src = "${mp3_1}" type="audio/mpeg">
@@ -91,7 +93,7 @@ $.ajax({
 		<audio controls>
 		<source src = "${mp3_6}" type="audio/mpeg">
 		Your browsr does not support the audio element.
-		</audio>
+		</audio></center>
 `;
 
 $('#app').html(html);
