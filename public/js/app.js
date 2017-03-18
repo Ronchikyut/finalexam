@@ -43,7 +43,7 @@ $.ajax({
 
 
 	console.log(response);
-	let name =response.albums.items[1].artists[0].name;
+	let name =response.albums.items[0].artists[0].name;
 	let image1 = response.albums.items[0].images[1].url;
 	let image2 = response.albums.items[1].images[1].url;
 	let image3 = response.albums.items[2].images[1].url;
